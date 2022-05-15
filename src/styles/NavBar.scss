@@ -9,6 +9,7 @@ body {
         height: 70px;
         justify-content: center;
         background-color: $lightRed;
+        margin: 0 auto;
 
         .title {
             margin: auto;
@@ -25,6 +26,7 @@ body {
         .navBar__list {
             list-style: none;
             display: flex;
+            justify-content: center;
             flex-direction: row;
             margin: auto;
             padding-right: 40px;
@@ -32,6 +34,7 @@ body {
             .list__item {
                 margin: 20px;
                 text-align: center;
+                justify-content: center;
 
                 .list__button {
                     text-decoration: none;
