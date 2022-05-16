@@ -1,9 +1,10 @@
 @import 'variables';
 
-.contador {
+.container__h1 {
     text-align: center;
     margin: auto;
     color: $lightGray;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    margin-top: 250px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
