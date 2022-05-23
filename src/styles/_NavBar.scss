@@ -33,6 +33,7 @@ body {
 
         .list {
             grid-area: 1 / 5 / 2 / 7;
+
             .navBar__list {
                 list-style: none;
                 display: flex;
@@ -54,10 +55,16 @@ body {
                         border-radius: 5px;
                         border: none;
                         font-size: 1.3rem;
+                        transition: 800ms;
                         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
                         &:hover {
                             background-color: $eerieBlack;
+                            -webkit-transition: background 800ms ease-in-out;
+                            -moz-transition: background 800ms ease-in-out;
+                            -ms-transition: background 800ms ease-in-out;
+                            -o-transition: background 800ms ease-in-out;
+                            transition: background 800ms ease-in-out;
                         }
                     }
                 }
