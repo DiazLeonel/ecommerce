@@ -1,5 +1,4 @@
 import cartLogo from '../img/cart.png'
-import '../styles/itemCart.scss'
 
 const Carrito = () => {
     return (

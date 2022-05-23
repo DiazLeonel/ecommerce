@@ -1,7 +1,4 @@
-import '../styles/itemListContainer.scss';
-
 const ItemListContainer = (props) => {
-    return <h1 className='container__h1'>{props.greeting}</h1>
-}
+    return <span>{props.greeting}</span>}
 
 export default ItemListContainer;
