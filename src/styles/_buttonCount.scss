@@ -2,7 +2,9 @@
 
 .contador{
     background-color: #fff;
-    max-width: 100px;
+    width: 100px;
+    margin: 10px auto;
+    border-radius: 5px;
     display: flex;
     text-align: center;
     justify-content: space-around;
@@ -13,6 +15,7 @@
     }
     span{
         display: flex;
+        text-align: center;
         align-items: center;
         font-size: 1.1rem;
         justify-content: center
