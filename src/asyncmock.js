@@ -1,32 +1,32 @@
 const products = [
-    // {
-    //     id: "1",
-    //     img: "./catalogo/acc2.png",
-    //     title: "String Change Kit",
-    //     description: "The Gibson String Change Kit includes all the tools you need to change your guitar strings like a pro. The heavy-duty string winder features a high-quality axle that allows for smooth, wobble-free rotations, a jumbo-sized grip, and a handy built-in bridge pin puller. The sharp, pro-quality string cutters feature ultra-soft grips that are built for comfort, making string changes simple. This kit is an essential accessory for any player’s guitar case.",
-    //     category: "accesory",
-    //     subCategory: "cleaningAndCare",
-    //     price: 19.99,
-    //     stock: 6
-    // },
-    // {
-    //     id: "2",
-    //     img: "./catalogo/acc3.png",
-    //     title: "Guitar Polish",
-    //     description: "Any musician knows that regular maintenance is a must when it comes to your cherished musical instrument. Gibson's Guitar Polish is specially designed to keep your instrument of choice – be it guitar, banjo or mandolin –clean and beautiful.",
-    //     category: "accesory",
-    //     price: 6.99,
-    //     stock: 13
-    // },
-    // {
-    //     id: "3",
-    //     img: "./catalogo/acc4.png",
-    //     title: "Multi-Tool",
-    //     description: "A precision pocket apparatus to handle all of your on-site repair needs!",
-    //     category: "accesory",
-    //     price: 19.99,
-    //     stock: 13
-    // },
+    {
+        id: "1",
+        img: "./catalogo/acc2.png",
+        title: "String Change Kit",
+        description: "The Gibson String Change Kit includes all the tools you need to change your guitar strings like a pro. The heavy-duty string winder features a high-quality axle that allows for smooth, wobble-free rotations, a jumbo-sized grip, and a handy built-in bridge pin puller. The sharp, pro-quality string cutters feature ultra-soft grips that are built for comfort, making string changes simple. This kit is an essential accessory for any player’s guitar case.",
+        category: "accesory",
+        subCategory: "cleaningAndCare",
+        price: 19.99,
+        stock: 6
+    },
+    {
+        id: "2",
+        img: "./catalogo/acc3.png",
+        title: "Guitar Polish",
+        description: "Any musician knows that regular maintenance is a must when it comes to your cherished musical instrument. Gibson's Guitar Polish is specially designed to keep your instrument of choice – be it guitar, banjo or mandolin –clean and beautiful.",
+        category: "accesory",
+        price: 6.99,
+        stock: 13
+    },
+    {
+        id: "3",
+        img: "./catalogo/acc4.png",
+        title: "Multi-Tool",
+        description: "A precision pocket apparatus to handle all of your on-site repair needs!",
+        category: "accesory",
+        price: 19.99,
+        stock: 13
+    },
     {
         id: "4",
         img: "./catalogo/acustic1.png",
