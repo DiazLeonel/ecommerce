@@ -1,32 +1,32 @@
 const products = [
-    {
-        id: "1",
-        img: "./catalogo/acc2.png",
-        title: "String Change Kit",
-        description: "The Gibson String Change Kit includes all the tools you need to change your guitar strings like a pro. The heavy-duty string winder features a high-quality axle that allows for smooth, wobble-free rotations, a jumbo-sized grip, and a handy built-in bridge pin puller. The sharp, pro-quality string cutters feature ultra-soft grips that are built for comfort, making string changes simple. This kit is an essential accessory for any player’s guitar case.",
-        category: "accesory",
-        subCategory: "cleaningAndCare",
-        price: 19.99,
-        stock: 6
-    },
-    {
-        id: "2",
-        img: "./catalogo/acc3.png",
-        title: "Guitar Polish",
-        description: "Any musician knows that regular maintenance is a must when it comes to your cherished musical instrument. Gibson's Guitar Polish is specially designed to keep your instrument of choice – be it guitar, banjo or mandolin –clean and beautiful.",
-        category: "accesory",
-        price: 6.99,
-        stock: 13
-    },
-    {
-        id: "3",
-        img: "./catalogo/acc4.png",
-        title: "Multi-Tool",
-        description: "A precision pocket apparatus to handle all of your on-site repair needs!",
-        category: "accesory",
-        price: 19.99,
-        stock: 13
-    },
+    // {
+    //     id: "1",
+    //     img: "./catalogo/acc2.png",
+    //     title: "String Change Kit",
+    //     description: "The Gibson String Change Kit includes all the tools you need to change your guitar strings like a pro. The heavy-duty string winder features a high-quality axle that allows for smooth, wobble-free rotations, a jumbo-sized grip, and a handy built-in bridge pin puller. The sharp, pro-quality string cutters feature ultra-soft grips that are built for comfort, making string changes simple. This kit is an essential accessory for any player’s guitar case.",
+    //     category: "accesory",
+    //     subCategory: "cleaningAndCare",
+    //     price: 19.99,
+    //     stock: 6
+    // },
+    // {
+    //     id: "2",
+    //     img: "./catalogo/acc3.png",
+    //     title: "Guitar Polish",
+    //     description: "Any musician knows that regular maintenance is a must when it comes to your cherished musical instrument. Gibson's Guitar Polish is specially designed to keep your instrument of choice – be it guitar, banjo or mandolin –clean and beautiful.",
+    //     category: "accesory",
+    //     price: 6.99,
+    //     stock: 13
+    // },
+    // {
+    //     id: "3",
+    //     img: "./catalogo/acc4.png",
+    //     title: "Multi-Tool",
+    //     description: "A precision pocket apparatus to handle all of your on-site repair needs!",
+    //     category: "accesory",
+    //     price: 19.99,
+    //     stock: 13
+    // },
     {
         id: "4",
         img: "./catalogo/acustic1.png",
@@ -189,22 +189,139 @@ const products = [
         price: 29.99,
         stock: 7
     },
+    // {
+    //     id: "22",
+    //     img: "./catalogo/correa2.png",
+    //     title: "The Garden",
+    //     description: "",
+    //     category: "correa",
+    //     price: 49.99,
+    //     stock: 4
+    // },
+    // {
+    //     id: "23",
+    //     img: "./catalogo/correa3.png",
+    //     title: "The Primrose",
+    //     description: "",
+    //     category: "correa",
+    //     price: 74.99,
+    //     stock: 8
+    // },
+    // {
+    //     id: "24",
+    //     img: "./catalogo/designer1.png",
+    //     title: "The Primrose",
+    //     description: "",
+    //     category: "designer",
+    //     price: 74.99,
+    //     stock: 8
+    // },
+    // {
+    //     id: "25",
+    //     img: "./catalogo/designer2.png",
+    //     title: "The Primrose",
+    //     description: "",
+    //     category: "designer",
+    //     price: 74.99,
+    //     stock: 8
+    // },
+    // {
+    //     id: "26",
+    //     img: "./catalogo/designer3.png",
+    //     title: "The Primrose",
+    //     description: "",
+    //     category: "designer",
+    //     price: 74.99,
+    //     stock: 8
+    // },
+    // {
+    //     id: "27",
+    //     img: "./catalogo/designer4.png",
+    //     title: "The Primrose",
+    //     description: "",
+    //     category: "designer",
+    //     price: 74.99,
+    //     stock: 8
+    // },
+    // {
+    //     id: "28",
+    //     img: "./catalogo/designer5.png",
+    //     title: "The Primrose",
+    //     description: "",
+    //     category: "designer",
+    //     price: 74.99,
+    //     stock: 8
+    // },
+    // {
+    //     id: "29",
+    //     img: "./catalogo/designer6.png",
+    //     title: "The Primrose",
+    //     description: "",
+    //     category: "designer",
+    //     price: 74.99,
+    //     stock: 8
+    // },
+    // {
+    //     id: "30",
+    //     img: "./catalogo/es1.png",
+    //     title: "The Primrose",
+    //     description: "",
+    //     category: "es",
+    //     price: 74.99,
+    //     stock: 8
+    // },
+    // {
+    //     id: "31",
+    //     img: "./catalogo/es2.png",
+    //     title: "The Primrose",
+    //     description: "",
+    //     category: "es",
+    //     price: 74.99,
+    //     stock: 8
+    // },
+    // {
+    //     id: "32",
+    //     img: "./catalogo/es3.png",
+    //     title: "The Primrose",
+    //     description: "",
+    //     category: "es",
+    //     price: 74.99,
+    //     stock: 8
+    // },
+    // {
+    //     id: "33",
+    //     img: "./catalogo/es6.png",
+    //     title: "The Primrose",
+    //     description: "",
+    //     category: "es",
+    //     price: 74.99,
+    //     stock: 8
+    // },
     {
-        id: "22",
-        img: "./catalogo/correa2.png",
-        title: "The Garden",
-        description: "",
-        category: "correa",
-        price: 49.99,
-        stock: 4
+        id: "34",
+        img: "./catalogo/lespaul1.png",
+        title: "Les Paul Standard '50s",
+        description: "The new Les Paul Standard returns to the classic design that made it relevant, played and loved -- shaping sound across generations and genres of music. It pays tribute to Gibson's Golden Era of innovation and brings authenticity back to life. The Les Paul Standard 50's has a solid mahogany body with a maple top, a rounded 50's-style mahogany neck with a rosewood fingerboard and trapezoid inlays. It's equipped with an ABR-1, the classic-style Tune-O-Matic bridge, aluminum stop bar tailpiece, vintage deluxe tuners with keystone buttons, and aged gold tophat knobs. The calibrated Burstbucker 1 (neck) and Burstbucker 2 (bridge) pickups are loaded with AlNiCo II magnets, audio taper potentiometers and orange drop capacitors.",
+        category: "lespaul",
+        price: 2699,
+        stock: 8
     },
     {
-        id: "23",
-        img: "./catalogo/correa3.png",
-        title: "The Primrose",
-        description: "",
-        category: "correa",
-        price: 74.99,
+        id: "35",
+        img: "./catalogo/lespaul2.png",
+        title: "Les Paul Standard '50s P-90",
+        description: "The new Les Paul Standard returns to the classic design that made it famous. It pays tribute to Gibson's Golden Era of innovation and brings authenticity back to life. The Les Paul Standard 50s P-90 has a solid mahogany body with a maple top and a rounded 50s-style mahogany neck with a rosewood fingerboard and trapezoid inlays. It's equipped with an ABR-1, the classic-style Tune-O-Matic™ bridge, an aluminum Stop Bar tailpiece, Vintage Deluxe tuners with Keystone buttons, and aged gold Top Hat knobs. The classic P-90 pickups (neck and bridge) are loaded with Alnico 5 magnets, audio taper potentiometers, and Orange Drop® capacitors.",
+        category: "lespaul",
+        price: 2699,
+        stock: 8
+    },
+    {
+        id: "36",
+        img: "./catalogo/lespaul3.png",
+        title: "Les Paul Standard '60s",
+        description: "The new Les Paul Standard returns to the classic design that made it relevant, played and loved -- shaping sound across generations and genres of music. It pays tribute to Gibson's Golden Era of innovation and brings authenticity back to life. The Les Paul Standard 60's has a solid mahogany body with an AA figured maple top, and a slim taper 60's-style mahogany neck with a rosewood fingerboard and trapezoid inlays. It's equipped with a classic-style Tune-O-Matic bridge, aluminum stop bar tailpiece, Grover Rotomatic 'Kidney' tuners, and gold top hat knobs with silver reflectors. The Burstbucker 61R (neck) Burstbucker 61T (bridge) pickups are loaded with AlNiCo V magnets, audio taper potentiometers and orange drop capacitors.",
+        category: "lespaul",
+        price: 2699,
         stock: 8
     }
 ]
@@ -214,5 +331,13 @@ export const getProducts = () => {
         setTimeout(() => {
             resolve(products)
         }, 2000)
+    })
+}
+
+export const getProductsId = (id) =>{
+    return new Promise (resolve =>{
+        setTimeout(()=> {
+            resolve(products.find(prod => prod.id === id))
+        },2000)
     })
 }
