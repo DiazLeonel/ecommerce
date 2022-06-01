@@ -3,24 +3,24 @@
 import React from "react";
 import Carrito from "./itemCart";
 import logo from '../img/logo.png';
+import { Link, NavLink } from "react-router-dom";
+
+
 const NavBar = () => {
     return (
         <nav className="navbar">
             <div className="title">
-                <h1><a href="#"> <img src={logo} /></a></h1>
+                <Link to='/'>
+                    <h1><img src={logo} alt='logo' /></h1>
+                </Link>
             </div>
 
-            {/* <form className="buscador">
-                <button type="submit" className="material-icons-outlined">search</button>
-                <input type="search" placeholder="Buscar producto.." required></input>
-            </form> */}
             <div className="list">
-                <ul className="navBar__list">
-                    <li className="list__item"><a href="#" className="list__button">INICIO</a></li>
-                    <li className="list__item"><a href="#" className="list__button">PRODUCTOS</a></li>
-                    <li className="list__item"><a href="#" className="list__button">MARCAS</a></li>
-                    <Carrito />
-                </ul>
+                <NavLink to='/lespaul' className={({ isActive }) => isActive ? 'buttonLinkOff' : 'buttonLink'}>Les Paul</NavLink>
+                <NavLink to='/acustic' className={({ isActive }) => isActive ? 'buttonLinkOff' : 'buttonLink'}>Acustic</NavLink>
+                <NavLink to='/bass' className={({ isActive }) => isActive ? 'buttonLinkOff' : 'buttonLink'}>Bass</NavLink>
+                <NavLink to='/designer' className={({ isActive }) => isActive ? 'buttonLinkOff' : 'buttonLink'}>Designer</NavLink>
+                <Carrito />
             </div>
         </nav>
 

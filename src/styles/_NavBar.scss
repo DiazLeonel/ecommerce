@@ -6,7 +6,7 @@ body {
 
     .navbar {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: 0.3fr 1fr;
         grid-template-rows: 1fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
@@ -16,58 +16,45 @@ body {
             margin: auto;
             grid-area: 1 / 1 / 2 / 2;
 
-            a {
-                color: $floralWhite;
-                text-decoration: none;
-
-                &:hover {
-                    color: $eerieBlack;
-                }
-
-                img {
-                    width: 150px;
-                    filter: invert(49%) sepia(62%) saturate(3962%) hue-rotate(348deg) brightness(97%) contrast(89%);
-                }
+            img {
+                width: 150px;
+                filter: invert(49%) sepia(62%) saturate(3962%) hue-rotate(348deg) brightness(97%) contrast(89%);
             }
         }
 
         .list {
-            grid-area: 1 / 5 / 2 / 7;
+            margin: 20px;
+            grid-area: 1 / 2 / 2 / 3;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
 
-            .navBar__list {
-                list-style: none;
+            .buttonLink {
+                background-color: $Flame;
+                margin-right: 20px;
+                color: $paleSilver;
+                text-decoration: none;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 1.4rem;
                 display: flex;
                 justify-content: center;
-                flex-direction: row;
-                margin: auto;
-                padding-right: 40px;
+                align-items: center;
+                padding: 0 5px;
+                border-radius: 8px;
+            }
+            .buttonLinkOff{
+                color: $Flame;
+                background-color: $paleSilver;
+                text-decoration: none;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 1.4rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 5px;
+                border-radius: 8px;
+                margin-right: 20px;
 
-                .list__item {
-                    margin: 20px;
-                    text-align: center;
-                    justify-content: center;
-
-                    .list__button {
-                        text-decoration: none;
-                        color: $floralWhite;
-                        background-color: $Flame;
-                        padding: 10px 5px 5px 5px;
-                        border-radius: 5px;
-                        border: none;
-                        font-size: 1.3rem;
-                        transition: 800ms;
-                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-                        &:hover {
-                            background-color: $eerieBlack;
-                            -webkit-transition: background 800ms ease-in-out;
-                            -moz-transition: background 800ms ease-in-out;
-                            -ms-transition: background 800ms ease-in-out;
-                            -o-transition: background 800ms ease-in-out;
-                            transition: background 800ms ease-in-out;
-                        }
-                    }
-                }
             }
         }
     }

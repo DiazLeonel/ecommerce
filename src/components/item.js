@@ -1,16 +1,15 @@
 import ItemCount from './itemCount'
+import { NavLink } from "react-router-dom";
 
 
-const Item = ({ id, title, price, img, stock }) => {
+const Item = ({ id, title, price, img, stock, category }) => {
     return (
         <div className="card">
                 <span className="title">{title}</span>
                 <img src={img} alt={title}></img>
-                <span className="price">U$D {price}</span>
+                <span className="price">€ {price}</span>
                 <ItemCount initial='0' stock={stock}/>
-                <button className='buttonItem'>Comprar</button>
-                <button className='buttonItem'>Agregar al carrito</button>
-                <button className='buttonItem'>Ver Detalle</button>
+                <NavLink to={`/${category}/${id}/${title}`}  className='buttonItem'>Ver Detalle</NavLink>
         </div>
     )
 }

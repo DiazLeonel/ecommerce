@@ -3,9 +3,6 @@ import '../styles/style.scss'
 const ItemCount = (props) => {
 
 
-    //const state = useState(10)
-    //const count = state[0]
-    //const setCount = state[1]
     const [count, setCount] = useState(parseInt(props.initial));
 
     const onAdd = () => {

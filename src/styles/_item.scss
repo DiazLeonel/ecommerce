@@ -14,58 +14,6 @@ body {
     border-radius: 10px;
     background: linear-gradient(0deg, rgba(37,36,34,0.7595413165266106) 0%, rgba(235,94,40,1) 100%);
     align-content: center;
-
-    &:nth-child(-n+3) {
-        img{
-            width: 150px;
-            margin: 10px auto;
-        }
-    }
-    &:nth-child(15){
-        img{
-            width: 110px;
-        }
-    }
-    &:nth-child(16){
-        img{
-            width: 110px;
-        }
-    }
-    &:nth-child(17){
-        img{
-            width: 160px;
-        }
-    }
-    &:nth-child(18){
-        img{
-            width: 100px;
-        }
-    }
-    &:nth-child(19){
-        img{
-            width: 100px;
-        }
-    }
-    &:nth-child(20){
-        img{
-            width: 100px;
-        }
-    }
-    &:nth-child(21){
-        img{
-            width: 100px;
-        }
-    }
-    &:nth-child(22){
-        img{
-            width: 100px;
-        }
-    }
-    &:nth-child(23){
-        img{
-            width: 100px;
-        }
-    }
     .price{
         font-size: 1.3rem;
         font-weight: bold;
@@ -80,10 +28,12 @@ body {
         width: 190px;
         margin: 20px auto;
         transition: 600ms;
+        //transform: rotate(-90deg);
         &:hover{
             transform: scale(1.2);
         }
     }
+    
     .buttonItem{
         border: none;
         background-color: $Flame;
@@ -93,5 +43,7 @@ body {
         font-size: 1.2rem;
         padding: 5px;
         border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
     }
 }
