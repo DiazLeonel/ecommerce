@@ -1,18 +1,26 @@
 @import './variables';
 
 .contador{
-    background-color: #fff;
     width: 100px;
     margin: 10px auto;
     border-radius: 5px;
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: space-around;
-    .buttonCount{
+    .contador-detalle{
+        display: flex;
         background-color: #fff;
-        border: none;
-        font-size: 1.2rem;
+        justify-content: space-around;
+        
+        
     }
+        .buttonCount{
+            display: flex;
+            flex-direction: row;
+            border: none;
+            font-size: 1.2rem;
+        }
     span{
         display: flex;
         text-align: center;
