@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import Carrito from "./itemCart";
+import CartWidget from "./cartWidget";
 import logo from '../img/logo.png';
 import { Link, NavLink } from "react-router-dom";
 
@@ -20,7 +20,7 @@ const NavBar = () => {
                 <NavLink to='/acustic' className={({ isActive }) => isActive ? 'buttonLinkOff' : 'buttonLink'}>Acustic</NavLink>
                 <NavLink to='/bass' className={({ isActive }) => isActive ? 'buttonLinkOff' : 'buttonLink'}>Bass</NavLink>
                 <NavLink to='/designer' className={({ isActive }) => isActive ? 'buttonLinkOff' : 'buttonLink'}>Designer</NavLink>
-                <Carrito />
+                <CartWidget />
             </div>
         </nav>
 

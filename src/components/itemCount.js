@@ -1,20 +1,18 @@
 import { useState } from 'react';
 import '../styles/style.scss'
-const ItemCount = ({ stock, initial = 1, onAdd }) => {
+const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
 
-
-    const [count, setCount] = useState(initial);
-
+    const [quantity, setQuantity] = useState(initial);
 
     const onIncrement = () => {
-        if (count < stock) {
-            setCount(count + 1);
+        if (quantity < stock) {
+            setQuantity(quantity + 1);
         }
     }
 
     const onDecrease = () => {
-        if (count > 1) {
-            setCount(count - 1);
+        if (quantity > 1) {
+            setQuantity(quantity - 1);
         }
     }
 
@@ -22,11 +20,11 @@ const ItemCount = ({ stock, initial = 1, onAdd }) => {
         <div className='contador'>
             <div className='contador-detalle'>
                 <button className='buttonCount' onClick={onDecrease}>-</button>
-                <span>{count}</span>
+                <span>{quantity}</span>
                 <button className='buttonCount' onClick={onIncrement}>+</button>
             </div>
             <div className='contador-detalle-buy'>
-                <button className='buttonItem' onClick={() => onAdd(count)}>Comprar</button>
+                <button className='buttonItem' onClick={() => onAdd(quantity)}>Comprar</button>
             </div>
 
         </div>
