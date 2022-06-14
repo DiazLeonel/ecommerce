@@ -1,6 +1,6 @@
-@import './variables';
+@import 'variables';
 
-.contador{
+.contador {
     width: 100px;
     margin: 10px auto;
     border-radius: 5px;
@@ -8,24 +8,56 @@
     flex-direction: column;
     text-align: center;
     justify-content: space-around;
-    .contador-detalle{
+
+    .contador-detalle {
         display: flex;
-        background-color: #fff;
         justify-content: space-around;
-        
-        
-    }
-        .buttonCount{
+        color: $floralWhite;
+        background-color: rgb(92, 1, 0);
+        border-radius: 50px;
+
+        .buttonCount {
             display: flex;
+            background-color: rgb(92, 1, 0);
             flex-direction: row;
             border: none;
             font-size: 1.2rem;
+            background: none;
+            padding: 5px 10px;
+            color: $floralWhite;
+
+
         }
-    span{
-        display: flex;
-        text-align: center;
-        align-items: center;
-        font-size: 1.1rem;
-        justify-content: center
+
+        span {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            font-size: 1.1rem;
+            font-weight: bold;
+            justify-content: center;
+            font-family: $roboto;
+        }
     }
+
+    .contador-detalle-buy {
+        margin: 20px auto;
+
+        .buttonItem {
+            font-family: $roboto;
+            background: none;
+            border: none;
+            background-color: rgb(92, 1, 0);
+            font-size: 1.2rem;
+            padding: 10px;
+            border-radius: 50px;
+            color: $floralWhite;
+            cursor: pointer;
+
+        }
+    }
+
+    
+
+
 }

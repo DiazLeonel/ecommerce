@@ -2,6 +2,8 @@ import ItemCount from "./itemCount"
 import { useState, useContext } from "react"
 import { Link } from "react-router-dom"
 import CartContext from "../context/cartContext"
+import '../styles/style.scss'
+
 
 const ItemDetail = ({ id, title, description, img, price, stock, }) => {
     const [quantity, setQuantity] = useState(0)
@@ -18,15 +20,23 @@ const ItemDetail = ({ id, title, description, img, price, stock, }) => {
 
     return (
         <div className="itemDetail">
-            <h2>{title}</h2>
-            <div className="itemDetailFlex">
+            <div className="div1">
                 <img src={img} alt={title}></img>
-                <p>{description}</p>
             </div>
-            <span>€{price}</span>
-            {quantity > 0
-                ? <Link className="buttonItem" to='/cart'>Ver Carrito</Link>
-                : <ItemCount stock={stock} onAdd={handleOnAdd} initial={getProduct(id)?.quantity} />}
+            <div className="div2">
+                <h2>{title}</h2>
+            </div>
+            <div className="div3">
+                <div className="Dprice">
+                    <p>{description}</p>
+                    <span>€{price}</span>
+                </div>
+                <div className="Counter">
+                {quantity > 0
+                    ? <Link className="btnItem" to='/cart'>Ver Carrito</Link>
+                    : <ItemCount className="btnCount" stock={stock} onAdd={handleOnAdd} initial={getProduct(id)?.quantity} />}
+                    </div>
+            </div>
         </div>
     )
 }

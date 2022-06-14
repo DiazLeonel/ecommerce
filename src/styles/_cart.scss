@@ -1,0 +1,181 @@
+@import 'variables';
+
+.allCart {
+    .cartTitle {
+        color: $floralWhite;
+        font-family: $roboto;
+        margin-top: 6.25rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cartMap {
+        .cartProduct {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            flex-direction: column;
+            margin-bottom: 20px;
+            width: 20rem;
+            height: 25rem;
+            background-color: #fff;
+
+            img {
+                width: 200px;
+                transform: rotate(-45deg);
+                margin-bottom: 70px;
+            }
+
+            p {
+                font-size: 1.2rem;
+                font-family: $roboto
+            }
+
+            .deleteProduct {
+                background: none;
+                border: none;
+                font-size: 2rem;
+                background-color: #ff0101;
+                color: $floralWhite;
+                width: 100px;
+                height: 50px;
+                border-radius: 8px;
+                font-weight: bold;
+                cursor: pointer;
+                margin-top: 10px;
+
+            }
+        }
+        .botonera{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            flex-direction: column;
+            p{
+                font-weight: bold;
+                font-family: $roboto;
+                font-size: 2rem;
+            }
+            .btnDelete{
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 100px;
+                button{
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    padding: 10px;
+                    border-radius: 50px;
+                    font-family: $roboto;
+                    font-weight: 300;
+                    font-size: 2rem;
+                    &:first-child{
+                        background-color: #ff0101;
+                    }
+                    &:last-child{
+                        background-color: rgb(105, 255, 5);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.anyProducts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6.25rem;
+    font-family: $roboto;
+    color: $floralWhite;
+
+    h2 {
+        color: $floralWhite;
+
+        font-size: 1.875rem;
+    }
+
+    .returnBtn {
+        display: flex;
+        color: $floralWhite;
+        background-color: $Flame;
+        max-width: 6.25rem;
+        margin: 6.25rem auto;
+        text-decoration: none;
+        border-radius: .5rem;
+        padding: .3125rem;
+        transition: 600ms;
+
+        &:hover {
+            background-color: $floralWhite;
+            color: $Flame;
+        }
+    }
+
+    .text {
+        font-size: 28px;
+        font-family: helvetica;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .parpadea {
+
+        animation-name: parpadeo;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-name: parpadeo;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+    }
+
+    @-moz-keyframes parpadeo {
+        0% {
+            opacity: 1.0;
+        }
+
+        50% {
+            opacity: 0.0;
+        }
+
+        100% {
+            opacity: 1.0;
+        }
+    }
+
+    @-webkit-keyframes parpadeo {
+        0% {
+            opacity: 1.0;
+        }
+
+        50% {
+            opacity: 0.0;
+        }
+
+        100% {
+            opacity: 1.0;
+        }
+    }
+
+    @keyframes parpadeo {
+        0% {
+            opacity: 1.0;
+        }
+
+        50% {
+            opacity: 0.0;
+        }
+
+        100% {
+            opacity: 1.0;
+        }
+    }
+
+    /* ----------- */
+
+
+}
