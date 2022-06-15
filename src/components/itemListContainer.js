@@ -3,13 +3,14 @@
 import { useState, useEffect } from 'react';
 import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
+import Loader from './loading';
 
 import { getDocs, collection, query, where } from 'firebase/firestore'
 import { db } from '../services/firebase'
 
 const ItemListContainer = () => {
     const [products, setProducts] = useState([])
-    const [loading, setLoading] = useState()
+    const [loading, setLoading] = useState(true)
 
     const { categoryId } = useParams()
 
@@ -33,6 +34,10 @@ const ItemListContainer = () => {
         }) 
 
     }, [categoryId])
+
+    if(loading){
+        return <Loader/>
+    }
 
     return (
         <div>

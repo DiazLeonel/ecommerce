@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import ItemDetail from "./itemDetail";
 import { useParams } from "react-router-dom";
+import Loader from "./loading";
 
 import { getDoc, doc } from "firebase/firestore";
 import { db } from "../services/firebase";
@@ -28,7 +29,7 @@ const ItemDetailContainer = () => {
     }, [productId])
 
     if (loading) {
-        return <h1>Loading...</h1>
+        return <Loader/>
     }
 
 
