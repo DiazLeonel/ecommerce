@@ -32,13 +32,12 @@ const ItemDetail = ({ id, title, description, img, price, stock, }) => {
                     <span>€{price}</span>
                 </div>
                 <div className="Counter">
-                {quantity > 0
-                    ? <Link className="btnItem" to='/cart'>Ver Carrito</Link>
-                    : <ItemCount className="btnCount" stock={stock} onAdd={handleOnAdd} initial={getProduct(id)?.quantity} />}
-                    </div>
+                    {quantity > 0 
+                        ? <Link className="btnItem" to='/cart'>Ver Carrito</Link>
+                        : <ItemCount className="btnCount" stock={stock} onAdd={handleOnAdd} initial={getProduct(id)?.quantity} />}
+                </div>
             </div>
         </div>
     )
 }
-
 export default ItemDetail;

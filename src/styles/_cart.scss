@@ -1,6 +1,10 @@
 @import 'variables';
 
+
 .allCart {
+    max-width: 60.25rem;
+    margin: auto;
+
     .cartTitle {
         color: $floralWhite;
         font-family: $roboto;
@@ -10,78 +14,75 @@
     }
 
     .cartMap {
+        display: flex;
+        flex-direction: column;
+
         .cartProduct {
             display: flex;
-            justify-content: center;
+            flex-direction: row;
+            justify-content:  space-around;
             align-items: center;
-            margin: 0 auto;
-            flex-direction: column;
-            margin-bottom: 20px;
-            width: 20rem;
-            height: 25rem;
-            background-color: #fff;
-
-            img {
-                width: 200px;
-                transform: rotate(-45deg);
-                margin-bottom: 70px;
-            }
-
-            p {
+            background-color: $floralWhite;
+            margin: 1.25rem auto;
+            border-radius: .5rem;
+            p{
+                font-family: $roboto;
                 font-size: 1.2rem;
-                font-family: $roboto
             }
-
-            .deleteProduct {
+            img {
+                width: 6.25rem;
+                margin-top: .25rem;
+            }
+            .deleteProduct{
                 background: none;
                 border: none;
-                font-size: 2rem;
-                background-color: #ff0101;
-                color: $floralWhite;
-                width: 100px;
-                height: 50px;
-                border-radius: 8px;
-                font-weight: bold;
                 cursor: pointer;
-                margin-top: 10px;
-
+                background-color: #f90000;
+                width: 3.125rem;
+                height: 1.875rem;
+                border-radius: .5rem;
+                padding: .1875rem 0 0 0;
+                &:hover{
+                    box-shadow: .0625rem .0625rem .9375rem #000;
+                }
+                img{
+                    width: 1.25rem;
+                }
             }
         }
-        .botonera{
+    }
+    .botonera{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        flex-direction: column;
+        p{
+            font-weight: bold;
+            font-family: $roboto;
+            font-size: 2rem;
+        }
+        .btnDelete{
             display: flex;
-            justify-content: space-between;
-            margin: 0 auto;
-            flex-direction: column;
-            p{
-                font-weight: bold;
+            justify-content: space-evenly;
+            margin-bottom: 6.25rem;
+            button{
+                background: none;
+                border: none;
+                cursor: pointer;
+                padding: .625rem;
+                border-radius: 3.125rem;
                 font-family: $roboto;
-                font-size: 2rem;
-            }
-            .btnDelete{
-                display: flex;
-                justify-content: space-evenly;
-                margin-bottom: 100px;
-                button{
-                    background: none;
-                    border: none;
-                    cursor: pointer;
-                    padding: 10px;
-                    border-radius: 50px;
-                    font-family: $roboto;
-                    font-weight: 300;
-                    font-size: 2rem;
-                    &:first-child{
-                        background-color: #ff0101;
-                    }
-                    &:last-child{
-                        background-color: rgb(105, 255, 5);
-                    }
+                font-weight: 300;
+                font-size: 1.5rem;
+                background-color: $Flame;
+                margin: .625rem;
+                &:hover{
+                    box-shadow: .0625rem .0625rem .9375rem #555;
                 }
             }
         }
     }
 }
-
 
 .anyProducts {
     display: flex;
@@ -92,7 +93,6 @@
 
     h2 {
         color: $floralWhite;
-
         font-size: 1.875rem;
     }
 
@@ -114,19 +114,17 @@
     }
 
     .text {
-        font-size: 28px;
+        font-size: 1.75rem;
         font-family: helvetica;
         font-weight: bold;
         text-transform: uppercase;
     }
 
     .parpadea {
-
         animation-name: parpadeo;
         animation-duration: 1s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
-
         -webkit-animation-name: parpadeo;
         -webkit-animation-duration: 1s;
         -webkit-animation-timing-function: linear;
@@ -174,8 +172,4 @@
             opacity: 1.0;
         }
     }
-
-    /* ----------- */
-
-
 }

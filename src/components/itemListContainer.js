@@ -38,6 +38,7 @@ const ItemListContainer = () => {
     if(loading){
         return <Loader/>
     }
+    
 
     return (
         <div>
