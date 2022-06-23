@@ -7,12 +7,14 @@ import Cart from '../components/cart'
 import OrderEnd from '../components/form'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { CartContextProvider } from '../context/cartContext'
+import { NotificationProvider } from '../notification/notification';
 
 const App = () => {
 
   return (
     <div className="App">
       <CartContextProvider>
+      <NotificationProvider>
         <BrowserRouter>
           <NavBar />
           <Routes>
@@ -24,6 +26,7 @@ const App = () => {
             <Route path='/order' element={<OrderEnd />}/>
           </Routes>
         </BrowserRouter>
+        </NotificationProvider>
       </CartContextProvider>
     </div>
   );

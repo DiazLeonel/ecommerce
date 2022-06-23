@@ -16,7 +16,6 @@ const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
             setQuantity(quantity - 1);
         }
     }
-
     return (
         <div className='contador'>
             {stock === 0
@@ -26,7 +25,6 @@ const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
             <div className='contador-detalle'>
                 <button className='buttonCount' onClick={onDecrease}>-</button>
                 <span>{quantity}</span>
-                
                 <button className='buttonCount' onClick={onIncrement}>+</button>
             </div>
             <div className='contador-detalle-buy'>

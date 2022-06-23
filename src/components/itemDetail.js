@@ -1,8 +1,9 @@
-import ItemCount from "./itemCount"
-import { useState, useContext } from "react"
-import { Link } from "react-router-dom"
-import CartContext from "../context/cartContext"
-import '../styles/style.scss'
+import ItemCount from "./itemCount";
+import { useState, useContext } from "react";
+import { Link } from "react-router-dom";
+import CartContext from "../context/cartContext";
+import '../styles/style.scss';
+import { useNotification } from '../notification/notification';
 
 
 const ItemDetail = ({ id, title, description, img, price, stock, }) => {
@@ -10,13 +11,16 @@ const ItemDetail = ({ id, title, description, img, price, stock, }) => {
 
     const { addItem, getProduct } = useContext(CartContext)
 
+    const { setNotification } = useNotification()
     const handleOnAdd = (quantity) => {
-        setQuantity(quantity);
 
-        addItem({ id, title, price, quantity, img })
-    };
+        setQuantity(quantity)
+        setNotification("success", "Se agregó correctamente a su compra")
 
+        addItem({ id, title, price, quantity })
+    }
 
+    console.log(<ItemCount />)
 
     return (
         <div className="itemDetail">
@@ -32,7 +36,7 @@ const ItemDetail = ({ id, title, description, img, price, stock, }) => {
                     <span>€{price}</span>
                 </div>
                 <div className="Counter">
-                    {quantity > 0 
+                    {quantity > 0
                         ? <Link className="btnItem" to='/cart'>Ver Carrito</Link>
                         : <ItemCount className="btnCount" stock={stock} onAdd={handleOnAdd} initial={getProduct(id)?.quantity} />}
                 </div>
