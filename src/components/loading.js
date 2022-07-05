@@ -1,7 +1,7 @@
 const Loader = () => {
     return (
-        <div class='loader loader4'>
-            <div>
+        <div className='loaderVH'>
+            <div className='loader loader4'>
                 <div>
                     <div>
                         <div>
@@ -10,7 +10,11 @@ const Loader = () => {
                                     <div>
                                         <div>
                                             <div>
-                                                <div></div>
+                                                <div>
+                                                    <div>
+
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

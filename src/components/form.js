@@ -6,11 +6,11 @@ import CartContext from '../context/cartContext';
 import { useNotification } from '../notification/notification'
 import Loader from "./loading";
 
-const OrderEnd = () => {
+const Form = () => {
     const { cart, vaciar, totalPrice, getQuantity } = useContext(CartContext);
     const [loading, setLoading] = useState(false)
     const { setNotification } = useNotification()
-    const [orderId] = useState("");
+    const [orderId, setOrderId] = useState("");
     const [creatingOrder, setCreatingOrder] = useState(false);
     const [formData, setFormData] = useState({
         name: "",
@@ -41,6 +41,7 @@ const OrderEnd = () => {
                 batch.commit()
                 vaciar()
                 setNotification('success', `El id de la orden es: ${id}`)
+                setOrderId(id)
             }).catch(error => {
                 console.log(error)
                 setNotification('error', `Algunos productos no tienen stock`)
@@ -153,5 +154,5 @@ const OrderEnd = () => {
 }
 
 
-export default OrderEnd;
+export default Form;
 

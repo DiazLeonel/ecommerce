@@ -17,10 +17,9 @@ const ItemDetail = ({ id, title, description, img, price, stock, }) => {
         setQuantity(quantity)
         setNotification("success", "Se agregó correctamente a su compra")
 
-        addItem({ id, title, price, quantity })
+        addItem({ id, title, price, quantity, img })
     }
 
-    console.log(<ItemCount />)
 
     return (
         <div className="itemDetail">

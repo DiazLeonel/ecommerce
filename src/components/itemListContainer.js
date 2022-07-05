@@ -1,10 +1,7 @@
-/* import { getProducts } from "../asyncmock"; */
-/* import { getProductsCategory } from '../asyncmock'; */
 import { useState, useEffect } from 'react';
 import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
 import Loader from './loading';
-
 import { getDocs, collection, query, where } from 'firebase/firestore'
 import { db } from '../services/firebase'
 
@@ -46,7 +43,7 @@ const ItemListContainer = () => {
             {
                 products.length > 0
                     ? <ItemList products={products} />
-                    : <h2>No hay Productos</h2>
+                    : <h2 className='error'>No hay Productos</h2>
             }
         </div>
     )

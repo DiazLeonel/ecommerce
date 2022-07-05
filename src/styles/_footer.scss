@@ -1,0 +1,54 @@
+@import 'variables';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $eerieBlack;
+    margin-top: 3.125rem;
+    height: 10.5rem;
+
+    position: relative;
+    top: 30vh;
+    
+
+    .footerContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: auto 0;
+        justify-content: space-evenly;
+        
+        .redesContainer {
+            display: flex;
+            flex-direction: row;
+            justify-items: center;
+
+            img {
+                height: 1.875rem;
+            }
+        }
+
+        .logoContainer {
+            img {
+                width: 12.5rem;
+                filter: invert(49%) sepia(62%) saturate(3962%) hue-rotate(348deg) brightness(97%) contrast(89%);
+
+            }
+        }
+        .categoryContainer{
+            display: flex;
+            flex-direction: column;
+            a{
+                text-decoration: none;
+                font-family: $roboto;
+                font-size: 1.2rem ;
+                color: #000;
+                background-color: $Flame;
+                padding: 2px;
+                border-radius: 2px;
+                margin: 3px;
+            }
+        }
+    }
+
+}

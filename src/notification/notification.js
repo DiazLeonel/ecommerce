@@ -8,7 +8,7 @@ const Notification = ({ message, severity }) => {
         right: 5,
         width: 'auto',
         height: 'auto',
-        backgroundColor: severity === 'error' ? 'red' : 'green',
+        backgroundColor: severity === 'error' ? 'red' : 'violet',
         padding: '10px 20px 10px 20px',
         color: 'white',
         borderRadius: 5

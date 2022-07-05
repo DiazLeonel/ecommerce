@@ -6,7 +6,7 @@ const Item = ({ id, title, price, img, category, stock }) => {
         <>
             {stock < 1
                 ?
-                <div className="cardOut">
+                <div className="card cardOut">
                     <span className="title">{title}</span>
                     <img src={img} alt={title}></img>
                     <span className="price">€ {price}</span>

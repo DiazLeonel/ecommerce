@@ -6,9 +6,14 @@
     color: $floralWhite;
     font-size: 2rem;
     margin-top: 250px;
+    height: auto;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .card{
     display: flex;
     flex-direction: column;
+}
+
+.error{
+    margin: 16.25rem auto;
 }

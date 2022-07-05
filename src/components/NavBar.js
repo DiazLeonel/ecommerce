@@ -1,9 +1,8 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import CartWidget from "./cartWidget";
 import logo from '../img/logo.png';
 import { Link, NavLink } from "react-router-dom";
+
 
 
 const NavBar = () => {

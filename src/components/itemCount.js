@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import "../styles/_buttonCount.scss"
 
 const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
 
@@ -19,7 +18,7 @@ const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
     return (
         <div className='contador'>
             {stock === 0
-            ? <h3>no hay</h3>
+            ? <h3>Sin Stock</h3>
             : 
             <div>
             <div className='contador-detalle'>
